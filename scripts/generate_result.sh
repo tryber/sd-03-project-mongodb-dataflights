@@ -30,7 +30,7 @@ print_results() {
 # Print tests evaluation
 for entry in "$TRYBE_DIR/expected-results"/*
 do
-  scripts/resetdb.sh "$DB_RESTORE_DIR"
+  /data/db/scripts/resetdb.sh "$DB_RESTORE_DIR"
   # Get challenge name
   chName=$(echo "$(basename $entry)" | sed -e "s/.js//g")
   # Build path to results dir
@@ -45,7 +45,7 @@ do
   fi
   # Exec mongo query
   mql=$(cat "$mqlFile")
-  scripts/exec.sh "$mql" &> "$resultPath"
+  /data/db/scripts/exec.sh "$mql" &> "$resultPath"
   # Check result with the expected
   diff=$(diff "$resultPath" "$TRYBE_DIR/expected-results/$chName")
   if [[ ! -z "$diff" ]]; then

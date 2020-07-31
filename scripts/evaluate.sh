@@ -8,4 +8,4 @@ fi
 
 export DBNAME=dataFlights
 
-scripts/generate_result.sh "$PWD/challenges" "$PWD/.trybe" "$PWD/assets"
+data/db/scripts/generate_result.sh "$PWD/challenges" "$PWD/.trybe" "$PWD/assets"

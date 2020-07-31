@@ -5,7 +5,7 @@ db.resumoVoos.insertMany([
       $and: 
         [
           { "empresa.nome": "PASSAREDO" },
-          { "natureza": "Domestica" }
+          { "natureza": "Doméstica" }
         ]
     }).count(),
   }

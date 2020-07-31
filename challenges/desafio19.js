@@ -1,8 +1,6 @@
 // Retorne o `vooId` do primeiro voo em que o campo `litrosCombustivel` exista.
 db.voos.find(
-  {
-    litrosCombustivel: { $exists: true }
-  },
+  { litrosCombustivel: { $gt: 0 } },
   {
     _id: 0,
     vooId: 1,

@@ -1,1 +1,7 @@
-db.voos.find({ "litrosCombustivel": { $lte: 1000 }}, { "_id": false, "vooId": true }).limit(1);
+db.voos.find(
+  { "litrosCombustivel": {
+    $not: { $gt: 1000 },
+    $exists: true 
+  } },
+  { "_id": false, "vooId": true, "litrosCombustivel": true }
+).limit(1);

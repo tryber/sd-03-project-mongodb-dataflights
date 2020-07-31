@@ -1,10 +1,12 @@
+totalDeVoos = db.voos.find(
+  {
+    "natureza": "Doméstica",
+    "empresa.nome": "PASSAREDO"
+  }
+).count();
+
 db.resumoVoos.insertOne({
-  "totalVoosDomesticos": db.voos.find(
-    {
-      "natureza": "Doméstica",
-      "empresa.nome": "PASSAREDO"
-    }
-  ).count(),
+  "totalVoosDomesticos": totalDeVoos,
   "empresa": "PASSAREDO"
 });
 

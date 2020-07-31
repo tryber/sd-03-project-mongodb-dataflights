@@ -1,1 +1,7 @@
-db.voos.find({ "litrosCombustivel": { $lte: 1000 }}, { "_id": false, "vooId": true });
+db.voos.find({
+  "empresa.nome": { $in: ["DELTA AIRLINES", "AMERICAN AIRLINES"] },
+  "aeroportoOrigem.sigla": "SBGR",
+  "aeroportoDestino": "KJFK"
+},
+  { "_id": false, "vooId": true }
+).limit(1);

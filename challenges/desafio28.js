@@ -1,10 +1,10 @@
 db.resumoVoos.insertMany([
   {
-    "empresa": "PASSAREDO",
+    "empresa": "LATAM AIRLINES BRASIL",
     "totalVoosDomesticos": db.voos.find({
       $and:
         [
-          { "empresa.nome": "PASSAREDO" },
+          { "empresa.nome": "LATAM AIRLINES BRASIL" },
           { "natureza": "Doméstica" }
         ]
     }).count(),
@@ -12,6 +12,6 @@ db.resumoVoos.insertMany([
 ])
 
 db.resumoVoos.find({
-  "empresa": "PASSAREDO"
+  "empresa": "LATAM AIRLINES BRASIL"
 },
 { "_id": 0, "empresa": 1, "totalVoosDomesticos": 1}).limit(1);

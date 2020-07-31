@@ -15,4 +15,4 @@ db.resumoVoos.insertMany([
 db.resumoVoos.find({
   "empresa": "LATAM AIRLINES BRASIL"
 },
-{ "_id": 0, "empresa": 1, "totalVoosDomesticos": 1}).limit(1);
+{ "_id": 0, "empresa": true, "totalVoosDomesticos": 1}).limit(1);

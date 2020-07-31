@@ -4,3 +4,5 @@ db.resumoVoos.insertOne({
   ).count(),
   "empresa": "LATAM AIRLINES BRASIL"
 });
+
+db.resumoVoos.find({}, { "_id": 0 });

@@ -1,1 +1,1 @@
-db.voos.find({ "ano": { $gt: 2018, $lt: 2017 } }).count();
+db.voos.find({ "ano": { $gt: 2017, $lt: 2018 } }).count();

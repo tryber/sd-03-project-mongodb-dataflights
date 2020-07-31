@@ -1,9 +1,9 @@
 db.voos.find(
   {
-    "listrosCombustivel": { exists: true }
+    "litrosCombustivel": { $exists: true }
   },
   {
-    "_id": 0,
-    "vooId": 1
+    "_id": false,
+    "vooId": true
   }
 ).limit(1);

@@ -1,3 +1,3 @@
 db.voos.find({
-  "aeroporto.Destino.pais": { $not: "ESTADOS UNIDOS" }
+  "aeroportoDestino.pais": { $not: /ESTADOS UNIDOS/ }
 }).count();

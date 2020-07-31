@@ -6,8 +6,8 @@ totalDeVoos = db.voos.find(
 ).count();
 
 db.resumoVoos.insertOne({
-  "totalVoosDomesticos": totalDeVoos,
-  "empresa": "PASSAREDO"
+  "empresa": "PASSAREDO",
+  "totalVoosDomesticos": totalDeVoos
 });
 
 db.resumoVoos.find({}, { "_id": 0 });

@@ -2,7 +2,7 @@
 db.voos.find(
   { litrosCombustivel: { $gt: 0 } },
   {
-    _id: 0,
-    vooId: 1,
+    _id: false,
+    vooId: true,
   }
 ).limit(1);

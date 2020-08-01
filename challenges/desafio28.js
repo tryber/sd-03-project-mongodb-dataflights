@@ -6,12 +6,7 @@
 
 db.resumoVoos.insertOne({
   empresa: "LATAM AIRLINES BRASIL",
-  totalVoosDomesticos: db.voos.count({
-    $and: [
-    { "empresa.nome": "LATAM AIRLINES BRASIL" },
-    { natureza: "Doméstica" }
-    ]
-  })
+  totalVoosDomesticos: db.voos.count({ $and: [{ "empresa.nome": "LATAM AIRLINES BRASIL" }, { natureza: "Doméstica" }] })
 });
 
 // 2. Em uma segunda query, retorne a `empresa` e o `totalVoosDomesticos` do primeiro documento presente na coleção `resumoVoos` em que a empresa seja `LATAM AIRLINES BRASIL`.

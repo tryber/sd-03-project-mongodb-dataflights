@@ -1,1 +1,1 @@
-db.voos.findOne({rtk:{$not:{$exists:true}}},{vooId:1})
+db.voos.findOne({rtk:{$exists:false}},{vooId:1})

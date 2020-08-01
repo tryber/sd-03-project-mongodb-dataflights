@@ -1,1 +1,1 @@
-db.getCollection('voos').count();
+db.voos.count();

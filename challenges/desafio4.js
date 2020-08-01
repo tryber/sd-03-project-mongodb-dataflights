@@ -1,1 +1,1 @@
-db.getCollection('voos').find({"empresa.nome":"GOL"}).count()
+db.voos.find({"empresa.nome":"GOL"}).count()

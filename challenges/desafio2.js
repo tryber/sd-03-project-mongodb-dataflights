@@ -1,1 +1,1 @@
-db.getCollection('voos').find().limit(10)
+db.voos.find().limit(10)

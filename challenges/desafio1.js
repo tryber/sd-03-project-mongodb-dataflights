@@ -1,2 +1,2 @@
-debugger.voos.count();
+db.voos.count();
 

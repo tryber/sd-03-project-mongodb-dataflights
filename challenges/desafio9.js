@@ -1,1 +1,1 @@
-db.voos.find({ $and: [{ ano: { $gte: 2017 } }, { ano: { $lte: 2018 } }] });
+db.voos.count({ ano: { $in: [2017, 2018] } });

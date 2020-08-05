@@ -1,5 +1,5 @@
 db.voos.find(
-   { $and:[ 
+    { $and:[ 
     { $or: [     
         { "empresa.nome": {$eq: "DELTA AIRLINES"}},
         { "empresa.nome": {$eq: "AMERICAN AIRLINES"}},
@@ -7,5 +7,5 @@ db.voos.find(
     {"aeroportoOrigem.sigla":{$eq:"SBGR"}},
     {"aeroportoDestino.sigla":{$eq:"KJFK"}}
     ]
-   },{vooId:1, _id:0}
-   ).limit(1);
+    },{vooId:1, _id:0}
+    ).limit(1);

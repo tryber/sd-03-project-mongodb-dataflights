@@ -1,9 +1,5 @@
 db.voos.find(
-  {
-    "rtk": {
-      $exists: false,
-    },
-  },
+  { "rtk": { $exists: false } },
   {
     "vooId": 1,
     "_id": 0,

@@ -14,4 +14,3 @@ db.voos.find(
       "_id": 0, 
     }
   ).limit(10).pretty();
-  

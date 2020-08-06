@@ -11,4 +11,4 @@ db.voos.deleteMany(
       },
     ]
   }
-).count();
+);

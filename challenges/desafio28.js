@@ -13,7 +13,12 @@ db.resumoVoos.insertMany(
       "totalVoosDomesticos": db.voos.find(
         {
           $and: [
-            { "empresa.nome": "LATAM AIRLINES BRASIL" },
+            { "empresa.nome": {
+                $in: [
+                  "LATAM AIRLINES BRASIL",
+                ],
+              },
+            },
             { "natureza": "Doméstica" },
           ],
         },

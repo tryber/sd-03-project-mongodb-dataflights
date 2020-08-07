@@ -1,1 +1,1 @@
-db.voos.find({ano:{$lt:2007}});
+db.voos.count({ano:{$lt:2007}});

@@ -1,1 +1,1 @@
-db.voos.count({},"vooId").limit(3).skip(9);
+db.voos.count({},{vooId:1}).limit(3).skip(9);

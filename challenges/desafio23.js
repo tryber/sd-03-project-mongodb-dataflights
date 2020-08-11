@@ -1,9 +1,7 @@
 db.voos.findOne({
   "litrosCombustivel": {
+    $exists: true,
     $not: { $gt: 1000 }
-  },
-  "litrosCombustivel": {
-    $exists: true
   }
 },{
   "_id": 0,
